@@ -1,0 +1,73 @@
+*{margin:0px;padding:0px;}
+
+@font-face{
+    font-family: pixel-art;
+    src: url("font/PixelEmulator.ttf");
+}
+
+body{
+    background-color: #f7f7f7;
+}
+
+#game-screen{
+    width:600px;
+    height:150px;
+    margin:calc(50vh - 150px) auto;
+    background-image: url("image/Ground.png");
+    background-repeat: repeat-x;
+    background-position:0 bottom;
+    position: relative;
+    overflow: hidden;
+}
+
+#player{
+    width:30px;
+    height: 47px;
+    position: absolute;
+    bottom: 4px;
+    left: 7px;
+}
+
+#player-image{
+    margin-left:-7px;
+}
+
+.cactus{
+    position: absolute;
+    bottom: 4px;    
+}
+
+#canvas{
+    position: relative;
+}
+
+.score{
+    position: absolute;
+    right: 0px;
+    color: rgb(110, 110, 110);
+    font-size:18px;
+    font-family: pixel-art;
+}
+
+#gameover-tab{
+    position: absolute;
+    display: none;
+}
+
+#gameover-tab img{
+    position: absolute;
+    top:40px;
+    left:193px;
+}
+
+#replay{
+    background-color: transparent;
+    border: none;
+    width: 37px;
+    height: 37px;
+    background-image: url("image/ReplayBtn.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    top:60px;
+    left:263px; 
+}

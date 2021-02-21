@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Runner Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery collision/jquery-1.8.3.min.js"></script>
+    <script src="jquery collision/jquery-collision.js"></script>
+</head>
+<body>
+
+    <div id="game-screen">
+        <div id="sky"></div>
+        
+        <div id="player">
+            <img src="image/t rex.png" id="player-image">
+        </div>
+
+        <div id="street"></div>
+
+        <div id="canvas">
+            <div class="score">
+                <span id="score">00000</span>
+            </div>
+            <div id="gameover-tab">
+                <img src="image/GameOver.png">
+                <button id="replay" onclick="reset()"></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
