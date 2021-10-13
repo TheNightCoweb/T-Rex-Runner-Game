@@ -207,6 +207,29 @@ function is_collide(main_obj, other_obj){
         return true
 }
 
+/*
+    اگر می خواین بدون استفاده از پلاگین برخورد رو چک کنید 
+    می تونید این تابع رو به جای تابع 
+    is_collide
+    قرار بدید
+    function collisionDetect(obj1, obj2){
+        var bound1 = obj1.getBoundingClientRect();
+        var bound2 = obj2.getBoundingClientRect();
+
+        return (
+            (
+                (bound2.x <= bound1.x && bound1.x <= bound2.x + bound2.width) ||
+                (bound1.x <= bound2.x && bound2.x <= bound1.x + bound1.width)
+            )
+            &&
+            (
+                (bound2.y <= bound1.y && bound1.y <= bound2.y + bound2.height) ||
+                (bound1.y <= bound2.y && bound2.y <= bound1.y + bound1.height)
+            )
+        )
+    }
+*/
+
 function gameover(){
     player_img = document.getElementById("player-image");
     player_img.src = "image/t rex game over.png";
